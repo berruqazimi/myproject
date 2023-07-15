@@ -1,0 +1,82 @@
+Pokémon Battle Documentation
+The Pokémon Battle program is a Django-based web application that simulates a battle between two Pokémon based on their stats.change field. The program fetches data from the PokeAPI to retrieve the Pokémon information and calculates the stat changes to determine the winner.
+
+Features
+Input the names of two Pokémon to initiate a battle.
+Fetches Pokémon data from the PokeAPI.
+Calculates the stat change for each Pokémon.
+Determines the winner based on the stat changes.
+Displays the Pokémon ID card and battle results in a web interface.
+Provides error handling for invalid Pokémon names or data not found.
+Technologies Used
+Python
+Django
+Django REST Framework
+HTML
+CSS
+PokeAPI
+Setup and Installation
+Clone the project repository from GitHub:
+
+bash
+Copy code
+git clone https://github.com/your-username/pokemon-battle.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd pokemon-battle
+Install the required Python packages using pip:
+
+Copy code
+pip install -r requirements.txt
+Start the Django development server:
+
+Copy code
+python manage.py runserver
+Access the Pokémon Battle application in your web browser at http://localhost:8000/battle/.
+
+Usage
+Open your web browser and go to the Pokémon Battle application URL (http://localhost:8000/battle/).
+Enter the names of two Pokémon in the respective input fields.
+Click the "Battle!" button to initiate the battle.
+The application will fetch the Pokémon data from the PokeAPI, calculate the stat changes, and determine the winner.
+The Pokémon ID cards and battle results will be displayed on the page.
+Testing
+The Pokémon Battle program includes automated tests to ensure the correctness of its functionalities. To run the tests, follow these steps:
+
+Ensure that you are in the project directory.
+
+Run the following command:
+
+bash
+Copy code
+python manage.py test
+This will execute the test cases and display the results in the console.
+
+Directory Structure
+The project directory structure is organized as follows:
+
+pokemon/ - Django project directory.
+pokemonbattle/ - Django app directory.
+migrations/ - Database migration files.
+templates/ - HTML templates directory.
+__init__.py - App initialization file.
+admin.py - Django admin configuration.
+models.py - Data models for Pokémon.
+tests.py - Test cases for the app.
+urls.py - URL routing configuration.
+views.py - Views and API endpoints.
+Customization
+You can customize the Pokémon Battle program to fit your specific requirements. Here are a few suggestions:
+
+Modify the HTML template (battle.html) to change the layout, styling, or additional information displayed.
+Enhance the error handling to provide more specific error messages or handle other exceptional cases.
+Extend the functionality to include additional Pokémon statistics or incorporate different battle rules.
+Integrate other external APIs or services to enhance the application with more Pokémon-related data or features.
+Conclusion
+The Pokémon Battle program is a simple yet engaging application that allows users to simulate battles between two Pokémon. It leverages the PokeAPI and Django to fetch data, calculate stats, and determine the winner. The program can serve as a foundation for building more sophisticated Pokémon-related applications or games.
+
+For more information, refer to the project's GitHub repository or consult the project developers for any questions or issues encountered during usage.
+
+Enjoy battling your favorite Pokémon!
